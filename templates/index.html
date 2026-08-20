@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %}Dashboard | StudentHub{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Manage students smarter.</h1>
+  <p>A clean and simple Student Management System to add, search, edit and manage student records from one place.</p>
+  <div class="actions">
+    <a class="btn btn-primary" href="/students">View Students →</a>
+    <a class="btn btn-light" href="/add">＋ Add Student</a>
+  </div>
+</section>
+
+<h2 class="section-title">Quick access</h2>
+
+<div class="stats">
+  <a href="/students" class="stat">
+    <div class="stat-icon">👨‍🎓</div>
+    <h3>Students</h3>
+    <p>View and manage all student records</p>
+  </a>
+
+  <a href="/add" class="stat">
+    <div class="stat-icon">➕</div>
+    <h3>Add</h3>
+    <p>Create a new student record quickly</p>
+  </a>
+
+  <a href="/students" class="stat">
+    <div class="stat-icon">🔎</div>
+    <h3>Search</h3>
+    <p>Search students by ID, name or course</p>
+  </a>
+</div>
+{% endblock %}
